@@ -1,0 +1,36 @@
+{
+  "name": "react-library",
+  "version": "0.0.0",
+  "description": "> TODO: description",
+  "author": "Elias-Manica <eliasmanica@poli.ufrj.br>",
+  "homepage": "https://github.com/Elias-Manica/poc-web-components#readme",
+  "license": "ISC",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "types": "dist/types/index.d.ts",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "dist"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Elias-Manica/poc-web-components.git"
+  },
+  "scripts": {
+    "test": "node ./__tests__/react-library.test.js",
+    "build": "npm run tsc",
+    "tsc": "tsc -p . --outDir ./dist"
+  },
+  "bugs": {
+    "url": "https://github.com/Elias-Manica/poc-web-components/issues"
+  },
+  "dependencies": {
+    "@stencil/react-output-target": "^0.7.3"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
